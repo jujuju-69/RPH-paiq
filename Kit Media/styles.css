@@ -1,0 +1,364 @@
+        /* Menambah font Google untuk mempercantikkan tulisan */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Menggunakan font Georgia untuk keseluruhan laman sesawang*/
+        body {
+            font-family: , Georgia;
+            line-height: 1.6;
+            background-color: #D3E4EA;
+            color: #003366;
+            text-align: center;
+        }
+		#myBtn {
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 30px;
+			z-index: 99;
+			font-size: 18px;
+			border: none;
+			outline: none;
+			background-color: red;
+			color: white;
+			cursor: pointer;
+			padding: 15px;
+			border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(to right, #b9c7dc, #b4c0ad);
+            padding: 0;
+            color: black;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            max-width: 120px;
+            margin: 0 auto 10px auto;
+            display: block;
+            border-radius: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+			text-align: center;
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            opacity: 0;
+            animation: fadeIn 2s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Navigasi */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            font-size: 1rem;
+            border-radius: 20px;
+            transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #78ffd6;
+            color: #333;
+            transform: scale(1.1);
+        }
+
+        /* Main Styling */
+        main {
+            padding: 20px;
+        }
+
+        /* Animasi muncul untuk setiap bahagian */
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            opacity: 0;
+            animation: fadeInSection 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeInSection {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section img {
+            display: block;
+            margin: 0 auto;
+            max-width: 60%;
+            height: auto;
+        }
+
+        section p {
+            margin: 10px 0;
+        }
+
+        /* Latihan, Refleksi dan Tugasan */
+        #latihan, #refleksi, #tugasan {
+            padding: 20px;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            opacity: 0;
+            animation: fadeInSection 1.5s ease-out forwards;
+        }
+
+        #latihan:hover, #refleksi:hover, #tugasan:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsif untuk bahagian ini */
+        @media (max-width: 768px) {
+            #latihan, #refleksi, #tugasan {
+                background-size: contain;
+                background-position: top;
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #007991;
+            color: white;
+            animation: fadeInFooter 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeInFooter {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .navigation-buttons button {
+            background: linear-gradient(90deg, #1565c0, #42a5f5);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin: 5px;
+            font-size: 1.1em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .navigation-buttons button:hover {
+            background: linear-gradient(90deg, #0d47a1, #1565c0);
+            transform: translateY(-3px);
+        }
+
+        .btn-latihan {
+            background: #42a5f5;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .btn-latihan:hover {
+            background: #1565c0;
+        }
+
+        .submit {
+            background: #42a5f5;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+		
+		
+
+        .submit:hover {
+            background: #1565c0;
+        }
+		/* Animasi hover untuk butang */
+.navigation-buttons button {
+    background: linear-gradient(90deg, #1565c0, #42a5f5);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 5px;
+    font-size: 1.1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s ease-out;
+}
+
+.navigation-buttons button:hover {
+    background: linear-gradient(90deg, #0d47a1, #1565c0);
+    transform: translateY(-3px) scale(1.1); /* Penambahan kesan scaling */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Bayangan yang lebih besar */
+}
+/* Animasi untuk tajuk header */
+header h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+	colour : blue;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Animasi zoom pada gambar */
+section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    height: auto;
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+section img:hover {
+    transform: scale(1.1); /* Zoom in apabila kursor melayang di atas gambar */
+}
+/* Animasi muncul footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #007991;
+    color: white;
+    animation: fadeInFooter 1.5s ease-out forwards;
+}
+
+@keyframes fadeInFooter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Animasi untuk menu navigasi */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background: #78ffd6;
+    color: #333;
+    transform: scale(1.1); /* Menambah efek pembesaran */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan pada hover */
+}
+/* Transisi halaman */
+html {
+    scroll-behavior: smooth;
+}
+
+
+ /* Tambahkan kelas untuk menyembunyikan tombol secara default */
+.hidden {
+    display: none;
+}
+
+ 
+    }
+    .btn-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-right: 20px;
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      transform: translateX(100%); /* Tersembunyi secara lalai */
+      opacity: 0;
+    }
+    .music-container:hover .btn-container {
+      transform: translateX(0); /* Slide keluar */
+      opacity: 1;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: 2px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      transition: background 0.3s, color 0.3s;
+    }
+    button:hover {
+      background: white;
+      color: #00f2fe;
+    }
+    .play-btn {
+      border-color: #28a745;
+    }
+    .mute-btn {
+      border-color: #dc3545;
+    }
+    .replay-btn {
+      border-color: #ffc107;
+	}
+	
